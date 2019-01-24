@@ -165,7 +165,6 @@ function start() {
 
   gameInterval = setInterval(function() {
                              createRock(Math.floor(Math.random() *  (GAME_WIDTH - 20)));
-                             window.requestAnimationFrame(moveRock);
                              },             
                  1000);
   moveInterval = setInterval(function(){
