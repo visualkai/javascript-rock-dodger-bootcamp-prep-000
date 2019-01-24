@@ -104,6 +104,7 @@ function endGame() {
 
 function moveDodger(e) {
   // implement me!
+  e.stopPropagation()
   if (e.which === LEFT_ARROW){
     if(positionToInteger(DODGER.style.left) <= 0){
       DODGER.style.left = '0px';
@@ -112,7 +113,6 @@ function moveDodger(e) {
     requestAnimationFrame(moveDodgerLeft);
   }
   if (e.which === RIGHT_ARROW){
-    e.stopPropagation()
     if (positionToInteger(DODGER.style.left) >= 360){
       DODGER.style.left = '360px';
       return null;
