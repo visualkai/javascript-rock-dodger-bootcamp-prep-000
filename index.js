@@ -66,26 +66,6 @@ function createRock(x) {
 
   rock.style.top = `${top}px`;
   
-  /**
-   * Now that we have a rock, we'll need to append
-   * it to GAME and move it downwards.
-   */
-
-  /**
-   * This function moves the rock. (2 pixels at a time
-   * seems like a good pace.)
-   */
-
-
-    /**
-     * But if the rock *has* reached the bottom of the GAME,
-     * we should remove the rock from the DOM
-     */
-
-  // We should kick of the animation of the rock around here
-
-  // Add the rock to ROCKS so that we can remove all rocks
-  // when there's a collision
   ROCKS.push(rock);
 
   // Finally, return the rock element you've created
@@ -93,7 +73,6 @@ function createRock(x) {
 }
  function moveRock() {
     var rockList = document.getElementsByClassName('rock')
-    console.log(rockList[0])
     for(var i = 0; i < rockList.length; i++){
     var rockTop = positionToInteger(rockList[i].style.top);
     rockList[i].style.top = `${rockTop+2}px`;
