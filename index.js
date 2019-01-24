@@ -91,8 +91,8 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  gameInterval = null;
-  moveInterval = null;
+  clearInterval(gameInterval);
+  clearInterval(moveInterval);
   document.div.removeChild('rock')
   alert('end of game triggered')
   
