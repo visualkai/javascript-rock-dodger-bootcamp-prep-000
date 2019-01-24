@@ -101,7 +101,7 @@ function createRock(x) {
     }
     console.log(rockTop + 22)
     if (rockTop == 378){
-     document.div.removeChild('rock');
+     rockList[i].remove();
     }
   }
 /**
