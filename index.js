@@ -97,6 +97,7 @@ function endGame() {
     ROCKS[i].remove()
   }
   DODGER.remove()
+  
   alert('end of game triggered')
   
 }
