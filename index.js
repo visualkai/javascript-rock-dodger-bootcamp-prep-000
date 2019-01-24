@@ -77,8 +77,9 @@ function createRock(x) {
     var rockTop = positionToInteger(rockList[i].style.top);
     rockList[i].style.top = `${rockTop+2}px`;
     checkCollision(rockList[i]);
+    
     }
-    console.log(rockTop + 22)
+    
     if (rockTop == 380){
      rockList[i].remove();
     }
