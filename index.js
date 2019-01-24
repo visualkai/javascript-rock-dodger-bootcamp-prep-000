@@ -93,7 +93,7 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
   clearInterval(moveInterval);
-  ROCKS.remove()
+  for(i = 0; i < ROCKS.length; i++)
   alert('end of game triggered')
   
 }
