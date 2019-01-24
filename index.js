@@ -119,14 +119,7 @@ function moveDodger(e) {
     requestAnimationFrame(moveDodgerRight);
     
   }
-  
-  /**
-   * This function should call `moveDodgerLeft()`
-   * if the left arrow is pressed and `moveDodgerRight()`
-   * if the right arrow is pressed. (Check the constants
-   * we've declared for you above.)
-   * And be sure to use the functions declared below!
-   */
+
 }
 
 function moveDodgerLeft() {
