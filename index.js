@@ -112,6 +112,7 @@ function moveDodger(e) {
     requestAnimationFrame(moveDodgerLeft);
   }
   if (e.which === RIGHT_ARROW){
+    e.stopPropagation()
     if (positionToInteger(DODGER.style.left) >= 360){
       DODGER.style.left = '360px';
       return null;
