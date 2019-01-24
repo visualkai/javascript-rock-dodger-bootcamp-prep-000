@@ -100,7 +100,7 @@ function createRock(x) {
     checkCollision(rockList[i]);
     }
     console.log(rockTop + 22)
-    if (rockTop == 378){
+    if (rockTop == 380){
      rockList[i].remove();
     }
   }
